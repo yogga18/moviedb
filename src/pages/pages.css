@@ -1,0 +1,58 @@
+.MuiTabs-root {
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+}
+
+.MuiTab-wrapper {
+    color: snow;
+    font-weight: bold;
+}
+
+/* .MuiBox-root{
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+} */
+
+.row {
+  margin-top: 25px;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.card__title {
+  font-size: 2.7rem;
+}
+
+.card__image {
+    /* max-width: 30%;
+    max-height: 100%; */
+    object-fit: contain;
+    margin-right: 13px;
+    transition: transform 450ms ease-in-out;
+    display: inline-flex;
+  }
+  
+  .card__image:hover {
+    transform: scale(1.05);
+  }
+
+  .card__desc {
+    margin-bottom: 40px;
+  }
+
+  .card__date {
+    margin: 8px;
+  }
+
+  .card__rating {
+    margin: 8px;
+  }
+
+  @media screen and (max-width: 730px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
