@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import StarRoundedIcon from '@material-ui/icons/StarRounded';
 
 import config_axios from './config_axios';
 
@@ -13,16 +12,17 @@ const base_img = 'https://image.tmdb.org/t/p/w300/'
 const Movie = (props) => {
     const [movies, setMovies] = useState([]);
 
-    const fetchMovies = async () => {
-        const request = await config_axios.get(props.url)
-        .then((response) => {
-            setMovies(response.data.results)
+    
 
-            console.log(response.data.results)
-        })
-    }
-
+    
     useEffect(() => {
+        const fetchMovies = async () => {
+            const request = await config_axios.get(props.url)
+            setMovies(request.data.results)
+
+
+        }
+
         fetchMovies();
     }, [])
 
