@@ -1,0 +1,85 @@
+.detai-wrapper{
+    /* overflow-x: hidden; */
+}
+
+.poster-wrapper{
+    background-color: #111;
+    display: flex;
+    padding: 60px 20px;
+}
+
+.Wrap-img{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.Wrap-desc{
+    color: whitesmoke;
+}
+
+.title-movies{
+    text-align: center;
+}
+
+.backdrop_path{
+    margin-right: 20px;
+    opacity: .5;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+}
+
+.backdrop_path:hover{
+    opacity: 1;
+}
+
+.tag-line{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.second-img{
+    margin: 0 auto;
+}
+
+.second-poster{
+    object-fit: cover;
+    opacity: .5;
+    transition: .3s ease-in-out;
+}
+
+.second-poster:hover{
+    opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .poster-wrapper{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .backdrop_path{
+        width: 400px
+    }
+    .second-poster{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .backdrop_path{
+        width: 300px
+    }
+    .second-poster{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .backdrop_path{
+        width: 250px
+    }
+    .second-poster{
+        width: 250px;
+    }
+}
