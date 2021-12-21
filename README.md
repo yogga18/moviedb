@@ -5,7 +5,7 @@
 # Demo App
 https://react01movedb.netlify.app
 
-# Made with 💕 by Yoga Aditya Candra and hosted on Vercel
+# Made with 💕 by Yoga Aditya Candra and hosted on Netlify
 
 
 # Getting Started with Create React App
