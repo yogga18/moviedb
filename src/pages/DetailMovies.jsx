@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, Fragment } from 'react';
 import './DetailMovies.css';
 import axios from 'axios';
@@ -24,9 +25,8 @@ function DetailMovies(props) {
     };
 
     fetchDetail();
-  });
+  }, []);
 
-  // console.log(props.match.params)
   return (
     <Fragment>
       {detail.map((detail) => {
